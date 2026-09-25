@@ -15,20 +15,20 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #f4f8f5;
+      background: #fff5f5;
       color: #222;
     }
 
     header {
-      background: linear-gradient(135deg, #087f3f, #064d2b);
+      background: linear-gradient(135deg, #d00000, #7a0000);
       color: white;
       text-align: center;
       padding: 45px 20px;
     }
 
     header h1 {
-      font-size: 42px;
-      margin: 0 0 10px;
+      font-size: 40px;
+      margin: 0;
     }
 
     header p {
@@ -36,7 +36,7 @@
     }
 
     nav {
-      background: #043d23;
+      background: #8b0000;
       padding: 15px;
       text-align: center;
       position: sticky;
@@ -47,7 +47,7 @@
     nav a {
       color: white;
       text-decoration: none;
-      margin: 0 12px;
+      margin: 10px;
       font-weight: bold;
     }
 
@@ -57,46 +57,44 @@
 
     .hero {
       text-align: center;
-      padding: 40px 15px;
+      padding: 35px 15px;
       background: white;
     }
 
     .hero h2 {
-      color: #087f3f;
-      font-size: 32px;
+      color: #b00000;
+      font-size: 30px;
     }
 
     .school-image {
       width: 95%;
       max-width: 900px;
       border-radius: 18px;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+      box-shadow: 0 6px 20px #999;
     }
 
     .grade {
       display: inline-block;
-      background: #087f3f;
+      background: #d00000;
       color: white;
       padding: 12px 30px;
       border-radius: 30px;
-      margin-top: 20px;
     }
 
     section {
-      padding: 55px 20px;
+      padding: 50px 20px;
       text-align: center;
     }
 
     section h2 {
-      color: #087f3f;
-      font-size: 30px;
+      color: #b00000;
     }
 
     .cards {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 25px;
+      gap: 20px;
     }
 
     .card {
@@ -108,39 +106,34 @@
     }
 
     .card h3 {
-      color: #05652f;
+      color: #b00000;
     }
 
     .contact {
-      background: #e8f4ec;
+      background: #ffe5e5;
     }
 
     footer {
-      background: #043d23;
+      background: #8b0000;
       color: white;
       text-align: center;
-      padding: 35px 20px;
+      padding: 30px;
     }
 
     .creator {
       color: #ffd700;
       font-size: 22px;
       font-weight: bold;
-      margin-top: 15px;
     }
 
     @media (max-width: 600px) {
       header h1 {
-        font-size: 30px;
+        font-size: 28px;
       }
 
       nav a {
         display: inline-block;
         margin: 7px;
-      }
-
-      .hero h2 {
-        font-size: 25px;
       }
     }
   </style>
@@ -148,142 +141,118 @@
 
 <body>
 
-  <header>
-    <h1>Kellem Secondary School</h1>
-    <p>Welcome to Our School Website</p>
-  </header>
+<header>
+  <h1>Kellem Secondary School</h1>
+  <p>Welcome to Our School Website</p>
+</header>
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#education">Education</a>
-    <a href="#teachers">Teachers</a>
-    <a href="#news">News</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#education">Education</a>
+  <a href="#teachers">Teachers</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-  <section id="home" class="hero">
+<section id="home" class="hero">
 
-    <h2>KELLEM SECONDARY SCHOOL</h2>
+  <h2>KELLEM SECONDARY SCHOOL</h2>
 
-    <!-- SCHOOL IMAGE -->
-    <img
-      src="kellem_school.png"
-      alt="Kellem Secondary School"
-      class="school-image">
+  <!-- School Photo -->
+  <img
+    src="kellem_school.png"
+    alt="Kellem Secondary School"
+    class="school-image">
 
-    <h2 class="grade">GRADE 10TH</h2>
+  <h2 class="grade">GRADE 10TH</h2>
 
-  </section>
+</section>
 
-  <section id="about">
-    <h2>About Our School</h2>
+<section id="about">
+  <h2>About Our School</h2>
 
-    <p>
-      Kellem Secondary School is a secondary school located in
-      Dambi Dollo, Oromia, Ethiopia.
-    </p>
+  <p>
+    Kellem Secondary School is located in
+    Dambi Dollo, Oromia, Ethiopia.
+  </p>
 
-    <p>
-      Our school is committed to providing quality education
-      and helping students achieve their goals.
-    </p>
-  </section>
+  <p>
+    Our school is committed to providing quality
+    education and helping students succeed.
+  </p>
+</section>
 
-  <section id="education">
-    <h2>Education</h2>
+<section id="education">
+  <h2>Education</h2>
 
-    <div class="cards">
+  <div class="cards">
 
-      <div class="card">
-        <h3>Mathematics</h3>
-        <p>
-          Developing students' mathematical knowledge
-          and problem-solving skills.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Science</h3>
-        <p>
-          Learning about science, technology and
-          the world around us.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>English</h3>
-        <p>
-          Improving English language skills,
-          communication and writing.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Afaan Oromoo</h3>
-        <p>
-          Learning and developing Afaan Oromoo
-          language and literature.
-        </p>
-      </div>
-
+    <div class="card">
+      <h3>Mathematics</h3>
+      <p>Quality Mathematics Education.</p>
     </div>
-  </section>
 
-  <section id="teachers">
-    <h2>Our Teachers</h2>
-
-    <div class="cards">
-
-      <div class="card">
-        <h3>Dedicated Teachers</h3>
-        <p>
-          Our teachers support students in their
-          academic journey.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Student Support</h3>
-        <p>
-          We encourage students to learn,
-          grow and succeed.
-        </p>
-      </div>
-
+    <div class="card">
+      <h3>Science</h3>
+      <p>Quality Science Education.</p>
     </div>
-  </section>
 
-  <section id="news">
-    <h2>News & Announcements</h2>
-
-    <div class="card" style="margin:auto;">
-      <h3>School News</h3>
-      <p>
-        New school announcements and important
-        information will be posted here.
-      </p>
+    <div class="card">
+      <h3>English</h3>
+      <p>English Language Education.</p>
     </div>
-  </section>
 
-  <section id="contact" class="contact">
-    <h2>Contact Us</h2>
+    <div class="card">
+      <h3>Afaan Oromoo</h3>
+      <p>Afaan Oromoo Language and Literature.</p>
+    </div>
 
-    <p><strong>School:</strong> Kellem Secondary School</p>
-    <p><strong>Location:</strong> Dambi Dollo, Oromia, Ethiopia</p>
-  </section>
+  </div>
+</section>
 
-  <footer>
+<section id="teachers">
+  <h2>Our Teachers</h2>
 
-    <p>© 2026 Kellem Secondary School</p>
+  <div class="cards">
 
-    <p>Dambi Dollo, Oromia, Ethiopia</p>
+    <div class="card">
+      <h3>Dedicated Teachers</h3>
+      <p>Our teachers support students in their education.</p>
+    </div>
 
-    <p class="creator">
-      Created by Nimona Getachew
-    </p>
+    <div class="card">
+      <h3>Our Students</h3>
+      <p>Hard-working students working toward success.</p>
+    </div>
 
-  </footer>
+  </div>
+</section>
+
+<section id="news">
+  <h2>News & Announcements</h2>
+
+  <div class="card" style="margin:auto;">
+    <h3>School News</h3>
+    <p>Important school announcements will appear here.</p>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact Us</h2>
+
+  <p><strong>School:</strong> Kellem Secondary School</p>
+  <p><strong<img src="kellem_school.png">>Location:</strong> Dambi Dollo, Oromia, Ethiopia</p>
+</section>
+
+<footer>
+  <p>© 2026 Kellem Secondary School</p>
+  <p>Dambi Dollo, Oromia, Ethiopia</p>
+
+  <p class="creator">
+    Created by Nimona Getachew
+  </p>
+</footer>
 
 </body>
 </html>
