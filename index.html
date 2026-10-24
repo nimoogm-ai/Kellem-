@@ -1,258 +1,109 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kellem Secondary School</title>
 
-  <title>Kellem Secondary School</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-  <style>
-    * {
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            text-align: center;
+        }
 
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #fff5f5;
-      color: #222;
-    }
+        header {
+            background: #c8102e;
+            color: white;
+            padding: 25px 10px;
+        }
 
-    header {
-      background: linear-gradient(135deg, #d00000, #7a0000);
-      color: white;
-      text-align: center;
-      padding: 45px 20px;
-    }
+        header h1 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
 
-    header h1 {
-      font-size: 40px;
-      margin: 0;
-    }
+        .welcome {
+            padding: 30px 15px;
+            background: #ffffff;
+        }
 
-    header p {
-      font-size: 20px;
-    }
+        .welcome h2 {
+            color: #c8102e;
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
 
-    nav {
-      background: #8b0000;
-      padding: 15px;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
+        .welcome p {
+            font-size: 17px;
+            line-height: 1.6;
+        }
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 10px;
-      font-weight: bold;
-    }
+        .school-image {
+            width: 95%;
+            max-width: 1000px;
+            margin: 20px auto;
+            border-radius: 12px;
+            display: block;
+            box-shadow: 0 4px 12px #999;
+        }
 
-    nav a:hover {
-      color: #ffd700;
-    }
+        .about {
+            padding: 25px 15px;
+            color: #222;
+        }
 
-    .hero {
-      text-align: center;
-      padding: 35px 15px;
-      background: white;
-    }
-
-    .hero h2 {
-      color: #b00000;
-      font-size: 30px;
-    }
-
-    .school-image {
-      width: 95%;
-      max-width: 900px;
-      border-radius: 18px;
-      box-shadow: 0 6px 20px #999;
-    }
-
-    .grade {
-      display: inline-block;
-      background: #d00000;
-      color: white;
-      padding: 12px 30px;
-      border-radius: 30px;
-    }
-
-    section {
-      padding: 50px 20px;
-      text-align: center;
-    }
-
-    section h2 {
-      color: #b00000;
-    }
-
-    .cards {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-
-    .card {
-      background: white;
-      width: 270px;
-      padding: 25px;
-      border-radius: 15px;
-      box-shadow: 0 4px 15px #ccc;
-    }
-
-    .card h3 {
-      color: #b00000;
-    }
-
-    .contact {
-      background: #ffe5e5;
-    }
-
-    footer {
-      background: #8b0000;
-      color: white;
-      text-align: center;
-      padding: 30px;
-    }
-
-    .creator {
-      color: #ffd700;
-      font-size: 22px;
-      font-weight: bold;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 28px;
-      }
-
-      nav a {
-        display: inline-block;
-        margin: 7px;
-      }
-    }
-  </style>
+        footer {
+            background: #c8102e;
+            color: white;
+            padding: 18px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 
 <body>
 
-<header>
-  <h1>Kellem Secondary School</h1>
-  <p>Welcome to Our School Website</p>
-</header>
+    <header>
+        <h1>KELLEM SECONDARY SCHOOL</h1>
+        <p>Dambi Dola, Oromia, Ethiopia</p>
+    </header>
 
-<nav>
-  <a href="#home">Home</a>
-  <a href="#about">About</a>
-  <a href="#education">Education</a>
-  <a href="#teachers">Teachers</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-</nav>
+    <section class="welcome">
+        <h2>WELCOME TO KELLEM!</h2>
+        <p>
+            Welcome to Kellem Secondary School.
+            Education is the key to success.
+            Learn today, lead tomorrow!
+        </p>
+    </section>
 
-<section id="home" class="hero">
+    <img
+        src="school.jpg"
+        alt="Kellem Secondary School Gate"
+        class="school-image"
+    >
 
-  <h2>KELLEM SECONDARY SCHOOL</h2>
+    <section class="about">
+        <h2>About Our School</h2>
+        <p>
+            Kellem Secondary School is a place of learning,
+            knowledge, discipline and success.
+            We build a brighter future through education.
+        </p>
+    </section>
 
-  <!-- School Photo -->
-  <img
-    src="kellem_school.png"
-    alt="Kellem Secondary School"
-    class="school-image">
-
-  <h2 class="grade">GRADE 10TH</h2>
-
-</section>
-
-<section id="about">
-  <h2>About Our School</h2>
-
-  <p>
-    Kellem Secondary School is located in
-    Dambi Dollo, Oromia, Ethiopia.
-  </p>
-
-  <p>
-    Our school is committed to providing quality
-    education and helping students succeed.
-  </p>
-</section>
-
-<section id="education">
-  <h2>Education</h2>
-
-  <div class="cards">
-
-    <div class="card">
-      <h3>Mathematics</h3>
-      <p>Quality Mathematics Education.</p>
-    </div>
-
-    <div class="card">
-      <h3>Science</h3>
-      <p>Quality Science Education.</p>
-    </div>
-
-    <div class="card">
-      <h3>English</h3>
-      <p>English Language Education.</p>
-    </div>
-
-    <div class="card">
-      <h3>Afaan Oromoo</h3>
-      <p>Afaan Oromoo Language and Literature.</p>
-    </div>
-
-  </div>
-</section>
-
-<section id="teachers">
-  <h2>Our Teachers</h2>
-
-  <div class="cards">
-
-    <div class="card">
-      <h3>Dedicated Teachers</h3>
-      <p>Our teachers support students in their education.</p>
-    </div>
-
-    <div class="card">
-      <h3>Our Students</h3>
-      <p>Hard-working students working toward success.</p>
-    </div>
-
-  </div>
-</section>
-
-<section id="news">
-  <h2>News & Announcements</h2>
-
-  <div class="card" style="margin:auto;">
-    <h3>School News</h3>
-    <p>Important school announcements will appear here.</p>
-  </div>
-</section>
-
-<section id="contact" class="contact">
-  <h2>Contact Us</h2>
-
-  <p><strong>School:</strong> Kellem Secondary School</p>
-  <p><strong<img src="kellem_school.png">>Location:</strong> Dambi Dollo, Oromia, Ethiopia</p>
-</section>
-
-<footer>
-  <p>© 2026 Kellem Secondary School</p>
-  <p>Dambi Dollo, Oromia, Ethiopia</p>
-
-  <p class="creator">
-    Created by Nimona Getachew
-  </p>
-</footer>
+    <footer>
+        <p>Created by Nimona Getachew</p>
+        <p>© 2026 Kellem Secondary School</p>
+    </footer>
 
 </body>
 </html>
